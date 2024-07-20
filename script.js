@@ -1,3 +1,6 @@
+const dialog = document.querySelector("dialog");
+const add= document.getElementById("dialog + button")
+const save = document.querySelector("dialog button");
 let myLibrary = [];
 
 function Book(title,author,pages,haveRead)
@@ -19,4 +22,11 @@ function addBookToLibrary()
     console.log("Enter the book name");    
 }
 
+add.addEventListener("click", ()=>{
+    console;log("Hello");
+});
+
+save.addEventListener("click" ,()=>{
+    dialog.close();
+})
 
