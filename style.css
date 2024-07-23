@@ -49,19 +49,35 @@ button:hover
     justify-content: center;
     padding-top: 5vh;
 }
- .modal
- {
-    margin-top: 40vh;
-    margin-left: 30vw;
-    padding: 2rem;
- }
- 
+
  .box{
-    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
     padding: 8px;
  }
 
  button
  {
-    width: inherit;
+    width: 100%;
  }
+.choice
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+    padding: 8px;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  
+  
