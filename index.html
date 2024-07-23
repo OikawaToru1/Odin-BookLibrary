@@ -16,15 +16,32 @@
        <div class="showcase"></div>
         <div>
             <dialog class="modal">
-                <p style="text-align: center;">Add Book</p>
+                <h2 style="text-align: center;">Add Book</h2>
+                <br>
                 <form action="" method="dialog">
                     <div class="box">
-                        <input id="title" type="text" placeholder="Book Title">
+                        <label for="title">Book Name :</label>
+                        <input id="title" type="text" placeholder="Ikigai">
                     </div>
                    <div class="box">
-                    <input type="text" placeholder="Author">
+                    <label for="author">Author :</label>
+                    <input type="text" id="author" placeholder="Author">
                    </div>
-                   <div class="box"><button id="saveMe" style="width: auto;">Save</button></div>
+                   <div class="choice">
+                    <div>Have Read :</div>
+                    <br>
+                    <div class="option">
+                        <div>
+                            <input type="radio" name="have read" id="yes">
+                                <label for="yes"> Yes,I have</label>
+                        </div>
+                            <div>
+                                <input type="radio" name="have read" id="no">
+                                <label for="no"> No, I haven't</label>
+                            </div>
+                    </div>
+                   </div>
+                   <div class="box"><button id="saveMe">Save</button></div>
                 </form>
             </dialog>
         </div>
