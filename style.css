@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 .header
 {
@@ -33,21 +34,54 @@ button
 }
 .login
 {
-    margin-right: 10vw;
+    width: 10vw;
+    text-align: center;
 }
 button:hover
-{
+{   
+    cursor: pointer;
     background-color: darkgray;
     border: 2px solid;
 }
 
-.main
+
+body
 {
     height: 80vh;
     background-color:burlywood;
+    
+    
+}
+.content
+{
+    
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 5vh;
+}
+.addBtn
+{
+    /* position:absolute; */
+    margin-bottom: 5vh;
+    align-self: baseline;
+    width: 8em;
+    /* flex-wrap: nowrap; */
+}
+
+.dbox{
+    padding: 1em;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-size: 1em;
+    position:absolute
+   
+}
+form{
+    
+    /* height: 400px; */
+    width: 300px;
 }
 
  .box{
@@ -57,10 +91,10 @@ button:hover
     padding: 8px;
  }
 
- button
+ /* button
  {
     width: 100%;
- }
+ } */
 .choice
 {
     display: flex;
@@ -79,5 +113,49 @@ input[type=text]{
     box-sizing: border-box;
   }
 
+
+  .grid-box-container
+  {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-auto-columns: 350px;
+    grid-auto-rows: 350px;
+    justify-content: space-around;
+    grid-row-gap: 30px;
+    padding-bottom: 10px;
+  }
+  .grid-box{
+    /* background-image: url(close.png); */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 10px;
+    /* text-align: left; */
+    justify-content: space-around;
+   align-items: center;
+   font-size: 1.8em;
+    
+   
+  }
+
+  /* .test{
+    display: none;
+  } */
+
+  /* img{
+    height: 10px;
+    color: red
+  } */
   
-  
+.btn{
+    /* margin: 20px; */
+   width: 80%; 
+}
+#readStatus
+{
+    background-color: greenyellow;
+}
+
+.btn :hover{
+    background-color: palegoldenrod;
+}

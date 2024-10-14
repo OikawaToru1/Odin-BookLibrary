@@ -11,42 +11,49 @@
         <div class="title">BooksHere</div>
         <div ><button class="login">Log in</button></div>
     </div>
-    <div class="main">
-       <div><button id="addBooks">Add Books +</button></div>
-       <div class="showcase"></div>
-        <div>
-            <dialog class="modal">
+    <div class="content">
+       <div><button class="addBtn" id="addBooks">Add Books +</button></div>
+        <div class="dbox" id="bookAdd">
                 <h2 style="text-align: center;">Add Book</h2>
                 <br>
                 <form action="" method="dialog">
                     <div class="box">
                         <label for="title">Book Name :</label>
-                        <input id="title" type="text" placeholder="Ikigai">
+                        <input id="title" type="text" placeholder="Ikigai" required>
                     </div>
                    <div class="box">
                     <label for="author">Author :</label>
-                    <input type="text" id="author" placeholder="Author">
+                    <input type="text" id="author" placeholder="Author" required>
+                   </div>
+                   <div class="box">
+                    <label for="Pages">Pages :</label>
+                    <input type="number" id="page" placeholder="100" required >
                    </div>
                    <div class="choice">
                     <div>Have Read :</div>
                     <br>
                     <div class="option">
                         <div>
-                            <input type="radio" name="have read" id="yes">
+                            <input type="radio" name="answer" id="yes"  class="radioBtn" value="Have Read">
                                 <label for="yes"> Yes,I have</label>
                         </div>
                             <div>
-                                <input type="radio" name="have read" id="no">
+                                <input type="radio" name="answer" id="no" class="radioBtn" value="Haven't Read">
                                 <label for="no"> No, I haven't</label>
                             </div>
                     </div>
                    </div>
                    <div class="box"><button id="saveMe">Save</button></div>
                 </form>
-            </dialog>
         </div>
     </div>
-    
-    <script src="script.js"></script>
-</body>
+    <div class="showcase">
+        <div id="container" class="grid-box-container">
+            <!-- <div id="one" class="grid-box">h</div> -->
+
+
+        </div>
+    </div>
+     <script src="script.js"></script>
+    </body>
 </html>
